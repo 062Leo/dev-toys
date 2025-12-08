@@ -4,12 +4,14 @@ This guide demonstrates various ways to add color and formatting to your GitHub 
 
 ---
 
+
 ## 📋 Table of Contents
 
 1. [Text Highlighting with `diff`](#text-highlighting-with-diff)
 2. [Text Color with LaTeX](#text-color-with-latex)
-3. [Applying to Titles and Text](#applying-to-titles-and-text)
-4. [Limitations](#limitations)
+3. [Text Alignment](#text-alignment)
+4. [Applying to Titles and Text](#applying-to-titles-and-text)
+5. [Limitations](#limitations)
 
 ---
 
@@ -27,6 +29,7 @@ Use `diff` syntax to highlight entire lines. Perfect for drawing attention to sp
 
 ---
 
+
 ## Text Color with LaTeX
 
 For precise color control, use LaTeX syntax to color individual words or phrases.
@@ -34,49 +37,57 @@ For precise color control, use LaTeX syntax to color individual words or phrases
 ### Basic Syntax
 
 ```
-$$\color{colorname}\textrm{Your text}$$
+$\color{colorname}\textrm{Your text}$
 ```
 
 **Example:**
 ```
-$$\color{orange}\textrm{This is a short-term goal.}$$
+$\color{orange}\textrm{This is an orange Example.}$
 ```
 
 **Renders as:**
-$$\color{orange}\textrm{This is a short-term goal.}$$
+$\color{orange}\textrm{This is an orange Example.}$
 
+---
 ### Available Colors
 
-| Color | Preview |
-|-------|---------|
-| Red | $${\color{red}Red}$$ |
-| Green | $${\color{green}Green}$$ |
-| Light Green | $${\color{lightgreen}Light Green}$$ |
-| Blue | $${\color{blue}Blue}$$ |
-| Light Blue | $${\color{lightblue}Light Blue}$$ |
-| Yellow | $${\color{yellow}Yellow}$$ |
-| Orange | $${\color{orange}Orange}$$ |
-| Purple | $${\color{purple}Purple}$$ |
-| Pink | $${\color{pink}Pink}$$ |
-| Brown | $${\color{brown}Brown}$$ |
-| Gray | $${\color{gray}Gray}$$ |
-| Black | $${\color{black}Black}$$ |
+| Preview |Preview|
+|---------|-------|
+ $\color{red}\textrm{red}$       | $\color{green}\textrm{green}$
+ $\color{green}\textrm{green}$   | $\color{lightgreen}\textrm{lightgreen}$ |
+ $\color{blue}\textrm{blue}$     | $\color{lightblue}\textrm{lightblue}$ |
+ $\color{yellow}\textrm{yellow}$ | $\color{orange}\textrm{orange}$ |
+ $\color{purple}\textrm{purple}$ | $\color{pink}\textrm{pink}$ |
+ $\color{brown}\textrm{brown}$   | $\color{gray}\textrm{gray}$ |
+ $\color{black}\textrm{black}$   
 
 ### Multiple Colors in One Line
 
-Combine multiple colors in a single line using `\space` to separate them.
+Combine multiple colors in a single line:
 
-**Example 1:**
+**Example:**
 ```
-$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+${\color{red}This  text  is  left  aligned}$
 ```
-$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+**Renders as:**
+${\textrm{\color{red}This  \color{lightblue}Text  has  \color{orange}multiple  colors}}$
 
-**Example 2:**
+
+### Text Alignment
+
+You can control the alignment of colored text using different LaTeX syntax:
+
+**Left-aligned (using single `$...$`):**
 ```
-$${\color{red}Welcome \space \color{lightblue}To \space \color{lightgreen}Github}$$
+${\color{red}This  is  left-aligned}$
 ```
-$${\color{red}Welcome \space \color{lightblue}To \space \color{lightgreen}Github}$$
+${\textrm{\color{orange}This  is  left  aligned}}$
+
+**Center-aligned (using double `$$...$$`):**
+```
+$${\color{orange}This  is  center-aligned}$$
+```
+$${\textrm{\color{orange}This  is  center-aligned}}$$
 
 ---
 
@@ -86,29 +97,58 @@ $${\color{red}Welcome \space \color{lightblue}To \space \color{lightgreen}Github
 
 **Main Title:**
 ```
-# $${\color{blue}This \space is \space a \space Main \space Title}$$
+# $${\color{blue}This  is  a  Main  Title}$$
 ```
-# $${\color{blue}This \space is \space a \space Main \space Title}$$
+# $${\textrm{\color{blue}This  is  a  Main  Title}}$$
 
 **Subtitle:**
 ```
-## $${\color{green}This \space is \space a \space Subtitle}$$
+## $${\color{green}This  is  a  Subtitle}$$
 ```
-## $${\color{green}This \space is \space a \space Subtitle}$$
+## $${\textrm{\color{green}This  is  a  Subtitle}}$$
 
 ### Text Formatting
 
-By default, text within `$$...$$` is *italic*. Use `\textrm{}` for normal (roman) text.
+By default, text is *italic*. Use `\textrm{}` for normal (roman) text.
 
 | Style | Syntax | Result |
 |-------|--------|--------|
-| Italic (Default) | `$${\color{red}This \space is \space italic}$$` | $${\color{red}This \space is \space italic}$$ |
-| Normal (Roman) | `$$\color{orange}\textrm{This is normal text.}$$` | $$\color{orange}\textrm{This is normal text.}$$ |
+| Italic (Default) | `$${\color{red}This \space text \space is \space italic}$$` | $${\color{red}This \space text \space is \space italic}$$ |
+| Normal (Roman) | `$$\color{orange}\textrm{This text is normal.}$$` | $$\color{orange}\textrm{This text is normal.}$$ |
 
----
+### Important Note: if you use something else then \textrm (Roman) , you have to use \space for seperating words
 
-## Limitations
+### Combination 
+ Here are some examples of how to combine them:
+ 
+## ${\textrm{\color{red}This \color{pink}text contains  \color{orange}several  colors,} \color{lightgreen}\space is \space a \space subheading, \space and \space is \space half \space written \space in \space italics.}$ ##
 
-⚠️ **Bold Text:** Standard Markdown bold (`**...**`) does not work inside `$$...$$` blocks. There is currently no reliable, cross-platform method to make colored text **bold** within GitHub's Markdown using LaTeX.
 
-If you have a working solution, please open an issue or submit a pull request!
+
+
+
+
+
+
+## teting :
+
+
+
+${\textrm{\color{orange}Example Text}}$
+
+${\mathbf{\color{orange}Example \space Text}}$
+
+${\mathrm{\color{orange}Example \space Text}}$
+
+${\mathsf{\color{orange}Example \space Text}}$
+
+${\mathtt{\color{orange}Examsple \space Text}}$
+
+${\mathit{\color{orange}Example \space Text}}$
+
+${\mathbb{\color{orange}Example \space Text}}$
+
+${\mathcal{\color{orange}Example \space Text}}$
+
+${\mathfrak{\color{orange}Example \space Text}}$
+
