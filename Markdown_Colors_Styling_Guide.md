@@ -116,7 +116,7 @@ By default, text is *italic*. Use `\textrm{}` for normal (roman) text.
 | Italic (Default) | `$${\color{red}This \space text \space is \space italic}$$` | $${\color{red}This \space text \space is \space italic}$$ |
 | Normal (Roman) | `$$\color{orange}\textrm{This text is normal.}$$` | $$\color{orange}\textrm{This text is normal.}$$ |
 
-### Important Note: if you use something else then \textrm (Roman) , you have to use \space for seperating words
+### Important Note: if you use Italic , you have to use \space for seperating words
 
 ### Combination 
  Here are some examples of how to combine them:
@@ -126,15 +126,13 @@ By default, text is *italic*. Use `\textrm{}` for normal (roman) text.
 
 
 
+---
+---
+---
 
+# Other:
 
-
-
-## teting :
-
-
-
-${\textrm{\color{orange}Example Text}}$
+## Following works in most IDE's, but not on GitHub::
 
 ${\mathbf{\color{orange}Example \space Text}}$
 
@@ -142,7 +140,7 @@ ${\mathrm{\color{orange}Example \space Text}}$
 
 ${\mathsf{\color{orange}Example \space Text}}$
 
-${\mathtt{\color{orange}Examsple \space Text}}$
+${\mathtt{\color{orange}Example \space Text}}$
 
 ${\mathit{\color{orange}Example \space Text}}$
 
@@ -151,4 +149,6 @@ ${\mathbb{\color{orange}Example \space Text}}$
 ${\mathcal{\color{orange}Example \space Text}}$
 
 ${\mathfrak{\color{orange}Example \space Text}}$
+
+### Important Note: Use \space for seperating words
 
