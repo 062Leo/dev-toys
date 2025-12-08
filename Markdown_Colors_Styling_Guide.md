@@ -2,16 +2,6 @@
 
 This guide demonstrates various ways to add color and formatting to your GitHub README files.
 
----
-
-
-## 📋 Table of Contents
-
-1. [Text Highlighting with `diff`](#text-highlighting-with-diff)
-2. [Text Color with LaTeX](#text-color-with-latex)
-3. [Text Alignment](#text-alignment)
-4. [Applying to Titles and Text](#applying-to-titles-and-text)
-5. [Limitations](#limitations)
 
 ---
 
@@ -163,6 +153,7 @@ ${\mathcal{\color{orange}Example \space Text}}$
 ${\mathfrak{\color{orange}Example \space Text}}$
 
 ### ⚠️ Important Note: use \space for seperating words
+
 
 
 
