@@ -69,19 +69,25 @@ You can use these coloring methods for titles, subtitles, and regular text.
 
 ### Colored Titles
 
-`# $${\color{blue}This is a Main Title}$$`
-# $${\color{blue}This is a Main Title}$$
+`# $${\color{blue}This \space is \space a \space Main \space Title}$$`
+# $${\color{blue}This \space is \space a \space Main \space Title}$$
 
-`## $${\color{green}This is a Subtitle}$$`
-## $${\color{green}This is a Subtitle}$$
+`## $${\color{green}This \space is \space a \space Subtitle}$$`
+## $${\color{green}This \space is \space a \space Subtitle}$$
 
-### Text Formatting (Bold, Italic)
+### Text Formatting (Normal vs. Italic)
 
-You can combine colors with standard Markdown formatting like bold and italic.
+By default, text within the `$$...$$` block is rendered in an *italic* math font. To get normal (non-italic, or "roman") text, you need to use the `\textrm{}` command.
 
-- **Normal:** $${\color{red}Red \space Text}$$
-- **Bold:** `**$${\color{red}Red \space Text}$$**` renders as **$${\color{red}Red \space Text}$$**
-- **Italic:** `*$${\color{red}Red \space Text}$$*` renders as *$${\color{red}Red \space Text}$$*
-- **Bold and Italic:** `***$${\color{red}Red \space Text}$$***` renders as ***$${\color{red}Red \space Text}$$***
+- **Italic (Default):**
+  `$${\color{red}This \space is \space italic}$$`
+  $${\color{red}This \space is \space italic}$$
 
-Note that some formatting might behave differently depending on the context and the Markdown renderer.
+- **Normal (Roman):**
+  `$$\color{orange}\textrm{This is normal text.}$$`
+  $$\color{orange}\textrm{This is normal text.}$$
+
+
+### A Note on Bold Text
+Standard Markdown bold (`**...**`) does not work on text inside a `$$...$$` block. After numerous tests, it appears there is currently no reliable, cross-platform method to make $$\color{orange}\textrm{colored}$$ text **bold** within GitHub's Markdown using LaTeX.
+If you know of a working solution, please feel free to open an issue or submit a pull request!
