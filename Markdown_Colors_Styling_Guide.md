@@ -67,10 +67,10 @@ Combine multiple colors in a single line:
 
 **Example:**
 ```
-${\color{red}This  text  is  left  aligned}$
+${\textrm{\color{red}This \color{lightblue}Text has \color{orange}multiple colors}}$
 ```
 **Renders as:**
-${\textrm{\color{red}This  \color{lightblue}Text  has  \color{orange}multiple  colors}}$
+${\textrm{\color{red}This \color{lightblue}Text has \color{orange}multiple colors}}$
 
 
 ### Text Alignment
@@ -79,15 +79,15 @@ You can control the alignment of colored text using different LaTeX syntax:
 
 **Left-aligned (using single `$...$`):**
 ```
-${\color{red}This  is  left-aligned}$
+${\textrm{\color{orange}This is left aligned}}$
 ```
-${\textrm{\color{orange}This  is  left  aligned}}$
+${\textrm{\color{orange}This is left aligned}}$
 
 **Center-aligned (using double `$$...$$`):**
 ```
-$${\color{orange}This  is  center-aligned}$$
+$${\textrm{\color{orange}This is center-aligned}}$$
 ```
-$${\textrm{\color{orange}This  is  center-aligned}}$$
+$${\textrm{\color{orange}This is center-aligned}}$$
 
 ---
 
@@ -97,15 +97,15 @@ $${\textrm{\color{orange}This  is  center-aligned}}$$
 
 **Main Title:**
 ```
-# $${\color{blue}This  is  a  Main  Title}$$
+# ${\color{blue}This is a Main Title}$
 ```
-# $${\textrm{\color{blue}This  is  a  Main  Title}}$$
+# ${\textrm{\color{blue}This is a Main Title}}$
 
 **Subtitle:**
 ```
-## $${\color{green}This  is  a  Subtitle}$$
+## $${\color{green}This is a Subtitle}$$
 ```
-## $${\textrm{\color{green}This  is  a  Subtitle}}$$
+## ${\textrm{\color{green}This is a Subtitle}}$
 
 ### Text Formatting
 
@@ -120,17 +120,28 @@ By default, text is *italic*. Use `\textrm{}` for normal (roman) text.
 
 ### Combination 
  Here are some examples of how to combine them:
- 
-## ${\textrm{\color{red}This \color{pink}text contains  \color{orange}several  colors,} \color{lightgreen}\space is \space a \space subheading, \space and \space is \space half \space written \space in \space italics.}$ ##
+
+## ${\textrm{\color{red}This \color{pink}text contains \color{orange}several colors,} \color{lightgreen}\space is \space a \space subheading, \space and \space is \space half \space written \space in \space italic.}$ ##
+ ```
+## ${\textrm{\color{red}This \color{pink}text contains \color{orange}several colors,} \color{lightgreen}\space is \space a \space subheading, \space and \space is \space half \space written \space in \space italic.}$ ##
+ ```
 
 
+
+
+## You can also  ${\textrm{\color{orange}color individual \color{lightgreen} words in the middle }}$ of a sentence.
+```
+## You can also  ${\textrm{\color{orange}color individual \color{lightgreen} words in the middle }}$ of a sentence.
+```
+  
 
 
 ---
 ---
 ---
+---
 
-# Other:
+
 
 ## Following works in most IDE's, but not on GitHub::
 
@@ -140,7 +151,7 @@ ${\mathrm{\color{orange}Example \space Text}}$
 
 ${\mathsf{\color{orange}Example \space Text}}$
 
-${\mathtt{\color{orange}Example \space Text}}$
+${\mathtt{\color{orange}Examsple \space Text}}$
 
 ${\mathit{\color{orange}Example \space Text}}$
 
@@ -150,5 +161,7 @@ ${\mathcal{\color{orange}Example \space Text}}$
 
 ${\mathfrak{\color{orange}Example \space Text}}$
 
-### Important Note: Use \space for seperating words
+
+
+
 
