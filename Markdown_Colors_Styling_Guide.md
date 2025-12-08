@@ -53,13 +53,14 @@ $\color{orange}\textrm{This is an orange Example.}$
 
 | Preview |Preview|
 |---------|-------|
- $\color{red}\textrm{red}$       | $\color{green}\textrm{green}$
+ $\color{red}\textrm{red}$       | $\color{gray}\textrm{gray}$ |
  $\color{green}\textrm{green}$   | $\color{lightgreen}\textrm{lightgreen}$ |
  $\color{blue}\textrm{blue}$     | $\color{lightblue}\textrm{lightblue}$ |
  $\color{yellow}\textrm{yellow}$ | $\color{orange}\textrm{orange}$ |
  $\color{purple}\textrm{purple}$ | $\color{pink}\textrm{pink}$ |
- $\color{brown}\textrm{brown}$   | $\color{gray}\textrm{gray}$ |
- $\color{black}\textrm{black}$   
+ $\color{brown}\textrm{brown}$   | $\color{black}\textrm{black}$ 
+
+### ⚠️ Important Note: The colors look different on GitHub and in the IDE's
 
 ### Multiple Colors in One Line
 
@@ -103,7 +104,7 @@ $${\textrm{\color{orange}This is center-aligned}}$$
 
 **Subtitle:**
 ```
-## $${\color{green}This is a Subtitle}$$
+## ${\color{green}This is a Subtitle}$
 ```
 ## ${\textrm{\color{green}This is a Subtitle}}$
 
@@ -113,10 +114,10 @@ By default, text is *italic*. Use `\textrm{}` for normal (roman) text.
 
 | Style | Syntax | Result |
 |-------|--------|--------|
-| Italic (Default) | `$${\color{red}This \space text \space is \space italic}$$` | $${\color{red}This \space text \space is \space italic}$$ |
-| Normal (Roman) | `$$\color{orange}\textrm{This text is normal.}$$` | $$\color{orange}\textrm{This text is normal.}$$ |
+| Italic (Default) | `${\color{red}This \space text \space is \space italic}$` | ${\color{red}This \space text \space is \space italic}$ |
+| Normal (Roman) | `$\color{orange}\textrm{This text is normal.}$` | $\color{orange}\textrm{This text is normal.}$ |
 
-### Important Note: if you use Italic , you have to use \space for seperating words
+### ⚠️ Important Note: if you use Italic , you have to use \space for seperating words
 
 ### Combination 
  Here are some examples of how to combine them:
@@ -161,6 +162,7 @@ ${\mathcal{\color{orange}Example \space Text}}$
 
 ${\mathfrak{\color{orange}Example \space Text}}$
 
+### ⚠️ Important Note: use \space for seperating words
 
 
 
